@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Algo>
-    <description texte="" courant="TANT_QUE (Nb&lt;=10) FAIRE"/>
+    <description texte="" courant="AFFICHER Somme"/>
     <extension extnom="inactif"/>
-    <fonction fctcode="" fctetat="inactif"/>
-    <F2 F2etat="inactif" F2para="" F2defaut="" F2lignes=""/>
+    <fonction fctetat="inactif" fctcode=""/>
+    <F2 F2lignes="" F2para="" F2etat="inactif" F2defaut=""/>
     <repere repcode="-10#10#-10#10#2#2" repetat="inactif"/>
-    <param maxBoucle="500000" epaisseurLigne="2" totalAffichages="1000" arrondiAuto="vrai" epaisseurPoint="2" totalBoucles="5000000" nbDecimales="8"/>
-    <item code="200#declarationfonctions" algoitem="FONCTIONS_UTILISEES"/>
-    <item code="100#declarationsvariables" algoitem="VARIABLES">
-        <item code="1#NOMBRE#Nb" algoitem="Nb EST_DU_TYPE NOMBRE"/>
-        <item code="1#NOMBRE#Entier" algoitem="Entier EST_DU_TYPE NOMBRE"/>
+    <param epaisseurLigne="2" maxBoucle="500000" totalAffichages="1000" nbDecimales="8" arrondiAuto="vrai" totalBoucles="5000000" epaisseurPoint="2"/>
+    <item algoitem="FONCTIONS_UTILISEES" code="200#declarationfonctions"/>
+    <item algoitem="VARIABLES" code="100#declarationsvariables">
+        <item algoitem="i EST_DU_TYPE NOMBRE" code="1#NOMBRE#i"/>
+        <item algoitem="Nb_User EST_DU_TYPE NOMBRE" code="1#NOMBRE#Nb_User"/>
+        <item algoitem="Somme EST_DU_TYPE NOMBRE" code="1#NOMBRE#Somme"/>
+        <item algoitem="Resultat EST_DU_TYPE CHAINE" code="1#CHAINE#Resultat"/>
     </item>
-    <item code="101#debutalgo" algoitem="DEBUT_ALGORITHME">
-        <item code="4#Entrez un chiffre : #0" algoitem="AFFICHER &quot;Entrez un chiffre : &quot;"/>
-        <item code="2#Nb#pasliste" algoitem="LIRE Nb"/>
-        <item code="5#Nb#Nb+Entier#pasliste" algoitem="Nb PREND_LA_VALEUR Nb+Entier"/>
-        <item code="15#Nb&lt;=10" algoitem="TANT_QUE (Nb&lt;=10) FAIRE">
-            <item code="16#debuttantque" algoitem="DEBUT_TANT_QUE"/>
-            <item code="5#Entier#Entier+1#pasliste" algoitem="Entier PREND_LA_VALEUR Entier+1"/>
-            <item code="5#Nb#Nb+1#pasliste" algoitem="Nb PREND_LA_VALEUR Nb+1"/>
-            <item code="17#fintantque" algoitem="FIN_TANT_QUE"/>
+    <item algoitem="DEBUT_ALGORITHME" code="101#debutalgo">
+        <item algoitem="AFFICHER &quot;Choisir un nombre :&quot;" code="4#Choisir un nombre :#1"/>
+        <item algoitem="LIRE Nb_User" code="2#Nb_User#pasliste"/>
+        <item algoitem="Somme PREND_LA_VALEUR 0" code="5#Somme#0#pasliste"/>
+        <item algoitem="POUR i ALLANT_DE 1 A Nb_User" code="12#i#1#Nb_User">
+            <item algoitem="DEBUT_POUR" code="13#debutpour"/>
+            <item algoitem="SI (i==1) ALORS" code="6#i==1">
+                <item algoitem="DEBUT_SI" code="7#debutsi"/>
+                <item algoitem="Resultat PREND_LA_VALEUR i" code="5#Resultat#i#pasliste"/>
+                <item algoitem="FIN_SI" code="8#finsi"/>
+                <item algoitem="SINON" code="9#sinon">
+                    <item algoitem="DEBUT_SINON" code="10#debutsinon"/>
+                    <item algoitem="Resultat PREND_LA_VALEUR Resultat +&quot;+&quot;+i" code="5#Resultat#Resultat +&quot;+&quot;+i#pasliste"/>
+                    <item algoitem="FIN_SINON" code="11#finsinon"/>
+                </item>
+            </item>
+            <item algoitem="Somme PREND_LA_VALEUR Somme+i" code="5#Somme#Somme+i#pasliste"/>
+            <item algoitem="AFFICHER Resultat" code="3#Resultat#1#pasliste"/>
+            <item algoitem="FIN_POUR" code="14#finpour"/>
         </item>
-        <item code="3#Entier#0#pasliste" algoitem="AFFICHER Entier"/>
+        <item algoitem="AFFICHER &quot;La somme des entiers jusqu'à &quot;" code="4#La somme des entiers jusqu'à #0"/>
+        <item algoitem="AFFICHER Nb_User" code="3#Nb_User#0#pasliste"/>
+        <item algoitem="AFFICHER &quot; est : &quot;" code="4# est : #0"/>
+        <item algoitem="AFFICHER Somme" code="3#Somme#0#pasliste"/>
     </item>
-    <item code="102#finalgo" algoitem="FIN_ALGORITHME"/>
+    <item algoitem="FIN_ALGORITHME" code="102#finalgo"/>
 </Algo>
