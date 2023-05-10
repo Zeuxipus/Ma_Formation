@@ -1,0 +1,23 @@
+body{
+    text-align: left;
+}
+
+li{
+    list-style-position: outside;
+}
+
+.imgRouge{
+    list-style-image: url(../puce_rouge_1.png);
+}
+
+.imgVert{
+    list-style: url(../puce_verte_1.png);
+}
+
+.imgOrange{
+list-style: url(../puce_orange_1.png);
+}
+
+.styleType{
+    list-style-type:square;
+}

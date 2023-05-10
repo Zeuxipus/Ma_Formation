@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+}
+
+.element{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.Title{
+    text-decoration: underline;
+}
+
+
+.conteneur{
+    border: 1px dotted red;
+    background-color: aquamarine;
+}
+.Subtitle{
+    font-weight: lighter;
+}
+
+.bold{
+    font-weight: bold;
+    font-style: italic;
+}
+
+#header{
+    border: 1px solid black;
+}
+
+#header:hover{
+    font-size: 25px;
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+#main{
+    border: 1px solid orangered;
+}
+
+
+
+#aside{
+    border: 1px solid green;
+}
+
+
+
+#footer{
+    border: 1px solid blue;
+}

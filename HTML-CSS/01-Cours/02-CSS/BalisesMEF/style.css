@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    color:rgb(19, 5, 2);
+    background-color: blanchedalmond;
+}
+
+.MefSpan{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+.MefDiv{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(0, 255, 76);
+    margin: 10px,auto;
+    padding: 10px;
+    color: orangered;
+}
+
+.blue{
+    background-color: blue;
+    color: white;
+}
+
+.red{
+    background-color: red;
+    color: yellow;
+}
+
+.yellow{
+    color: blue;
+    background-color: yellow;
+}
