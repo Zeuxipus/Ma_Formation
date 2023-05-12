@@ -1,0 +1,177 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+
+body{
+    padding: 0 2%;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+nav.profile{
+    display: flex;
+    align-items: center;
+}
+
+nav .profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+nav .profile h1{
+    margin-left: 10px;
+    font-size: 15px;
+    display:inline-block;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li{
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    color: #0e0e0e;
+}
+
+nav ul li:hover{
+    border-bottom-color: black;
+}
+
+@media screen and (max-width: 700px){
+    nav{
+        justify-content: center;
+    } 
+    nav ul{
+        display: none;
+    }
+    .page-content header{
+        margin-top: 10%;
+        max-width: 100%;
+    }
+    .page-content .projects-section h1{
+        font-size: 1.5em;
+    }
+    .page-content .projects-section{
+        margin-top: 15%;
+    }
+    .page-content .projects-section .mesprojets{
+        margin-bottom: 20px;
+        max-width: 100%;
+        margin-right: 0;
+    }
+    footer .colone{
+        margin-bottom: 20px;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+} 
+
+.page-content{
+    margin: 4%;
+}
+
+.page-content header{
+    margin-top: 8%;
+    max-width: 90%;
+}
+
+.page-content header h1{
+    margin: 0;
+    text-transform: uppercase;
+    font-family:no;
+    font-size: 3vw;
+}
+
+.page-content header p{
+    line-height: 30px;
+    color: #2f2e2e;
+}
+
+.page-content header button{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding-left: 0;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.page-content header button:hover{
+    color: #ccc;
+    border-bottom-color: #0e0e0e;
+}
+
+.page-content .presentation-image{
+    margin-top: 5%;
+}
+
+.page-content .presentation-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.page-content .projects-section {
+    margin-top: 6%;
+}
+
+.page-content .projects-section h1{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform:uppercase;
+    font-size: 3vw;
+}
+
+.page-content .projects-section .mesprojets{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-content .projects-section .mesprojets .project{
+    max-width: 195px;
+    margin-right: 200px;
+}
+
+.page-content .projects-section .mesprojets h4{
+    margin: 0;
+}
+
+.page-content .projects-section .mesprojets .decription{
+    font-size: 10px;
+}
+
+footer{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+footer .colonne{
+    font-size: 12px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+footer .colonne:hover{
+    color: #fff;
+}

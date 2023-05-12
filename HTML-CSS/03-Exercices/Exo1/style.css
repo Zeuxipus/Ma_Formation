@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+    background-color:cadetblue;
+    color: black;
+}
+
+img{
+    width: auto;
+    max-height: 150px;
+    padding: 15px;
+}
+
+nav a :hover{
+    color: darkred;
+    text-decoration: none;
+}
+
+a{
+    color: black;
+}
+
+.Pad{
+    padding: 20px;
+}
+
+.BdCollapse{
+    border-collapse: collapse;
+}
+
+table, th, tr, td{
+    margin: 10px auto;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+h2{
+    border-bottom: 55px;
+    margin: 15px;
+}
