@@ -28,24 +28,31 @@ nav .profile img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    margin: 10px;
 }
 
 nav .profile h1{
     margin-left: 10px;
     font-size: 15px;
-    display:inline-block;
+    display:inline-flex;
+    flex-wrap: wrap;
 }
 
 nav ul{
     display: flex;
     list-style-type: none;
+    text-decoration: none;
 }
 
-nav ul li{
+nav ul li {
     margin-left: 20px;
     cursor: pointer;
     border-bottom: 1px solid white;
     color: #0e0e0e;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
 }
 
 nav ul li:hover{

@@ -1,0 +1,92 @@
+/*
+
+            PROPRIETES CSS FLEXBOX
+
+
+
+
+    display: flex|inline-flex
+
+
+
+
+            PROPRIETES CONTAINER
+
+
+
+
+    flex-direction: row|column|row-reverse|column-reverse
+
+    flex-wrap: nowrap|wrap|reverse-wrap
+
+    flex-flow: <direction> <wrap>
+
+
+
+
+    justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly
+
+    align-items: flex-start|flex-end|center|stretch|baseline
+
+    order: <int>
+
+   
+
+    flex-grow: <int>
+
+    flex-shrink: <int>
+
+    flex-basis <length>
+
+    flex: <grow> <shrink> <basis>
+
+    flex: auto = flex: 1 1 0
+
+
+
+
+            PROPRIETES OBJET FLEX
+
+    align-self: flex-start|flex-end|center|stretch|baseline
+
+   
+
+*/
+
+body{
+    text-align: left;
+}
+
+.container .cont-item{
+    background-color: coral;
+    border: 1px solid rgb(64, 64, 64);
+    height: 100px;
+    width: 100px;
+}
+/*justify content/flex start: comportement par défaut
+justify content gère les alignements*/
+.container .cont-item .spaced{
+    justify-content: flex-start;
+}
+/*flex direction row: comportement par défaut
+flex direction gère le mode d'affichage du contenu*/
+.container{
+    display:flex;
+    flex-direction:row;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+/*justify content: 
+space between(espace entre les elements)
+space around(espace autour de chaque element)
+space evenly(donne exactement la meme distance entre les elements)*/
+
+.container .cont-item .spaced .diff{
+    justify-content: stretch;
+    align-content: center;
+}
+/*wrap permet la gestion du retour à la ligne*/
+
+/*order contrarie l'ordre dans lequel les éléments ont étés déclarés*/

@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+}
+
+.container{
+    grid-gap: 15px;
+    grid-auto-rows: minmax(20px, auto
+    );
+    display:grid;
+}
+
+.EnTete{
+    background-color: orange;
+    padding: auto;
+    grid-row: 1/4;
+    grid-column: 1/6;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.contenudepage{
+    background-color:blueviolet;
+    padding: auto;
+    grid-row: 4/15;
+    grid-column:2/6;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.pieddepage{
+    background-color: chartreuse;
+    padding: auto;
+    grid-row: 15/19;
+    grid-column: 1/6;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.menu{
+    background-color: deeppink;
+    padding: auto;
+    grid-row: 4/15;
+    grid-column: 1/2;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

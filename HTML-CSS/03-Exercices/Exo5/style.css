@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+}
+
+.zoneduhaut{
+    background-color: crimson;
+    grid-row: 3/7;
+    grid-column: 1/7;
+}
+
+.zonedegauche{
+    background-color: blue;
+    grid-row: 7/21;
+    grid-column: 2/3;
+}
+
+.Z1{
+    background-color: green;
+    grid-row: 7/14;
+    grid-column: 2;
+}
+
+.Z2{
+    background-color: green;
+    grid-row: 8/14;
+    grid-column: 3/7;
+}
+
+.Z3{
+    background-color: green;
+    grid-row: 8/14;
+    grid-column: 4;
+}
+
+.Z4{
+    background-color: green;
+    grid-row: 8/14;
+    grid-column: 5;
+}
+
+.Z5{
+    background-color: green;
+    grid-row: 8/14;
+    grid-column: 6;
+}
+
+.zonededroite{
+    background-color: blue;
+    grid-row: 5;
+    grid-column: 2;
+}
+
+.zonedubas{
+    background-color: yellow;
+    grid-row: 13;
+    grid-column: 2/4;
+}
+
+.container{
+    height: 35px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+}
