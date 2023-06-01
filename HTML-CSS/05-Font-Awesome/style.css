@@ -1,0 +1,73 @@
+body{
+    text-align: center;
+    margin: 0px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+}
+
+.NavBar{
+    background-color: coral;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.imglogo{
+    font-size: 55px;
+    color: rgb(71, 71, 71);
+    background-color: white;
+    width: 84px;
+    border-radius: 40px;
+}
+
+.MainTitle{
+    margin-left: 30px;
+}
+
+.footer{
+    background-color: crimson;
+    border-top: 5px solid coral;
+    color: white;
+}
+
+.center{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.links{
+    color: white;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.links:hover{
+    color: coral;
+}
+
+.nbButton{
+    background-color: rgb(71, 71, 71);
+    margin: 0 3px;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.label{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+    display: none;
+}
