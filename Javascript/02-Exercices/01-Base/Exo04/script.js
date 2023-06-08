@@ -18,12 +18,12 @@ let mot,
  */
 
 mot = prompt("Veuillez saisir un mot :")
-affichage += ("Vous avez saisi "${mot})
+affichage += (`Vous avez saisi ${mot}`)
 
 reverse = mot.split('').reverse().join('')
 if (reverse === mot) {
-    affichage += ("Le mot "${mot}" est un palindrome");}
-    else {affichage += ("Le mot "${mot}" n'est pas un palindrome");}
+    affichage += (`Le mot "${mot}" est un palindrome`);}
+    else {affichage += (`Le mot "${mot}" n'est pas un palindrome`);}
 
 
 

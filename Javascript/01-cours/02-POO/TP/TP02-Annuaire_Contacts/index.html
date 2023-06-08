@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TP 02 - Annuaire</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">
+                TP02 - Créer une liste de contacts en Javascript
+            </h1>
+            <hr>
+            <p class="lead">
+                Création et utilisation <mark>des POO</mark> en
+                <mark>Javascript</mark>
+            </p>
+            <div class="card">
+            <form>
+                <h3 class="card-title">Liste de Contacts</h3>
+                <table class="table table-hover">
+                    <thead>
+                        <th scope="col">#</th>
+                        <th scope="col">Titre</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Prénom</th>
+                        <th scope="col">Date- de Naissance</th>
+                        <th scope="col">Téléphone</th>
+                        <th scope="col">Mail</th>
+                    </thead>
+                        <!--Ici injection des lignes du tableau-->
+                    <tbody id="tableau"></tbody>
+                </table>
+                </div>
+
+
+                <div class="card">
+                    <h3 class="title">Ajout de Contacts</h3>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="titre" id="Mr" value="Mr" class="form-check-inline" checked>
+                        <label for="Mr" class="form-check-label">Monsieur</label>
+                        <input type="radio" name="titre" id="Mme" value="Mme" class="form-check-inline" >
+                        <label for="Mr" class="form-check-label">Madame</label>
+                    </div>
+
+                    <div class="row m-1" >
+                        <input type="text" name="nom" id="nom" placeholder="Nom" class="col p-1 form-control">
+                        <input type="text" name="prenom" id="prenom" placeholder="Prénom" class="col p-1 form-control">
+                    </div>
+                    <div class="row m-1" >
+                        <input type="date" name="dateNaissance" id="dateNaissance" class="col p-1 form-control">
+                        <input type="texte" name="telephone" id="telephone" class="col p-1 form-control">
+                        <input type="email" name="mail" id="mail" class="col p-1 form-control">
+                    </div>
+                    <div class="row m-1" >
+                        <button type="btn btn-success" id="Valider">Ajouter</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+
+        <div id="app"></div>
+    </div>
+    </div>
+    <script type="module" src="./module/index.js"></script>
+</body>
+
+</html>

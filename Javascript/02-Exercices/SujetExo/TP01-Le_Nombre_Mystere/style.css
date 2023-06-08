@@ -1,0 +1,51 @@
+.card{
+    background-color: #7A296A;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: aliceblue;
+    height: 35%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.carre h2{
+    border-top: 1px, solid, aliceblue;
+    padding-bottom: 15px;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 35px;
+}
+
+.carre h3{
+    padding-top: 25px;
+    border-top: 2px solid aliceblue;
+}
+
+
+#valider{
+    background-color: #9F5E93;
+    font-size: 15px;
+    margin:auto;
+    height: 40px;
+   max-width: 120px;
+   align-items: center;
+   display:inline;
+   
+}
+
+#nombrepropose{
+    margin:auto;
+   height: 40px;
+   max-width: 60px;
+   background-color: #c8a8c8c2;
+   align-items: center;
+   display:inline;
+}
+
+#rejouer{
+    background-color: #9F5E93;
+   /* font-size: 15px;
+    margin-bottom: 45px;
+    height: 40px;*/
+}
