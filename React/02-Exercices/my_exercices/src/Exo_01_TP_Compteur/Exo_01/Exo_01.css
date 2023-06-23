@@ -1,0 +1,41 @@
+/*.compteur{
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid black;
+    height: 65%;
+    width:65%;
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius:5px;
+    margin: 10%;
+}
+
+button{
+    width: 50px;
+    height: 30px;
+    
+    align-items: center
+}
+
+.valeurDepart{
+    display: flex;
+    flex-direction: column;
+}
+
+#Seconds{
+    width: 100%;
+    margin-bottom: 20px;;
+}
+
+h1{
+    color: grey;
+    text-align: left;
+}
+
+.start{
+    float: right;
+}*/

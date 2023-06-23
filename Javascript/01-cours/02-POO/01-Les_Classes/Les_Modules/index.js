@@ -22,7 +22,7 @@ let p2 = new Person("Dodo", "Dan")
 persons.push(p1)
 persons.push(p2)
 
-for (let peron of persons){
+for (let person of persons){
     person.Display()
 }
 
